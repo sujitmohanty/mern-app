@@ -1,10 +1,12 @@
 {
-  "name": "backend",
+  "name": "mern-support-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Support Ticket Application based on the MERN Stack",
   "main": "server.js",
   "scripts": {
-    "test": "node backend/server.js",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
